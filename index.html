@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In the Spotlight: Non-Sports Photo</title>
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="badge" aria-hidden="true">NS</span><span>Non-Sports Photo <small>2027 Yearbook · Photographer Course</small></span></div>
+  <button type="button" id="resetBtn" class="ghost small" hidden>Start over</button>
+</header>
+<div id="progress" class="progress" hidden>
+  <div class="progress-meta"><span id="progModule"></span><span id="progText"></span></div>
+  <div class="bar" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progFill"></span></div>
+</div>
+<main id="app" class="card" aria-live="polite"></main>
+<div id="confirm" class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmText" hidden>
+  <div class="confirm-box">
+    <h2 id="confirmTitle">Start over?</h2>
+    <p id="confirmText">This clears your answers, your name, your completion and your certificate on this device.</p>
+    <div class="row">
+      <button type="button" id="confirmNo" class="ghost">Cancel</button>
+      <button type="button" id="confirmYes" class="danger">Yes, start over</button>
+    </div>
+  </div>
+</div>
+<script src="app.js?v=2"></script>
+</body>
+</html>
